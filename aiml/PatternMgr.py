@@ -8,6 +8,7 @@ import re
 import string
 import LangSupport
 import sys
+import ChineseWordSegmentation
 
 class PatternMgr:
     # special dictionary keys
@@ -141,12 +142,13 @@ class PatternMgr:
         if len(pattern) == 0:
             return None
         pattern = self._lang_support(pattern)
+#TODO CHINESE seg
         # Mutilate the input.  Remove all punctuation and convert the
         # text to all caps.
         input = string.upper(pattern)
         input = self._puncStripRE.sub("", input)
         input = self._upuncStripRE.sub(u"", input)
-        #print input
+        print input
         if that.strip() == u"": that = u"ULTRABOGUSDUMMYTHAT" # 'that' must never be empty
         thatInput = string.upper(that)
         thatInput = re.sub(self._whitespaceRE, " ", thatInput)
