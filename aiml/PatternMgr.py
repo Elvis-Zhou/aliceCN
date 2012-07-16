@@ -160,10 +160,10 @@ class PatternMgr:
         #input=ChineseWordSegmentation.seg(pattern)
 
         #原来的分词
-        input = string.upper(pattern)
-        input = self._puncStripRE.sub("", input)
-        input = self._upuncStripRE.sub(u"", input)
-        print input
+        #input = string.upper(pattern)
+        #input = self._puncStripRE.sub("", input)
+        #input = self._upuncStripRE.sub(u"", input)
+        #print input
 
         if that.strip() == u"": that = u"ULTRABOGUSDUMMYTHAT" # 'that' must never be empty
         thatInput = string.upper(that)
