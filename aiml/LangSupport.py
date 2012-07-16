@@ -10,7 +10,6 @@
 #from ICTCLAS.ICTUtil import ICTUtil
 from re import compile as re_compile
 from string import join as str_join
-import ttt
 
 findall_gb   = re_compile('[\x81-\xff][\x00-\xff]|[^\x81-\xff]+').findall
 findall_utf8 = re_compile(u'[\u2e80-\uffff]|[^\u2e80-\uffff]+').findall

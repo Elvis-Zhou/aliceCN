@@ -141,14 +141,30 @@ class PatternMgr:
         """
         if len(pattern) == 0:
             return None
-        pattern = self._lang_support(pattern)
-#TODO CHINESE seg
+        print '未分词:',pattern
+        #TODO CHINESE seg
+
+        pattern=str(pattern.encode('utf-8'))
+        #input=ChineseWordSegmentation.newICT.ICTSeg(pattern)
+        input=ChineseWordSegmentation.seg(pattern)
+        print '分词后:',input
+        #原来的分词
+        #pattern = self._lang_support(pattern)
+
         # Mutilate the input.  Remove all punctuation and convert the
         # text to all caps.
+        #seg=ChineseWordSegmentation()
+        #seg.seg(pattern)
+
+
+        #input=ChineseWordSegmentation.seg(pattern)
+
+        #原来的分词
         input = string.upper(pattern)
         input = self._puncStripRE.sub("", input)
         input = self._upuncStripRE.sub(u"", input)
         print input
+
         if that.strip() == u"": that = u"ULTRABOGUSDUMMYTHAT" # 'that' must never be empty
         thatInput = string.upper(that)
         thatInput = re.sub(self._whitespaceRE, " ", thatInput)

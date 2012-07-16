@@ -3,13 +3,17 @@
 from ICTCLAS.ICTUtil import ICTUtil
 
 newICT = ICTUtil()
-class ChineseWordSegmentation:
 
-    def __init__(self,words):
-        self.input=words
-        self.output
-    def seg(self,words):
-        self.output=newICT.ICTSeg(words)
-        return self.output
+class ChineseWordSegmentation():
+    #def __init__(self):
+        #self.input=words
+        #self.output=newICT.ICTSeg(words)
+    @staticmethod
+    def seg(words):
+        output=newICT.ICTSeg(words)
+        return str(output)
 
 
+def seg(words):
+    output=newICT.ICTSeg(words)
+    return output
