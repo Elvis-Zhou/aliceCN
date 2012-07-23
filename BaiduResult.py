@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
-百度关键词排名
-By Jibo He @ ueseo.org
-hejibo@ueseo.org
-26 Oct, 2011
-'''
-import sys
+
+#import sys
 import urllib ,urllib2
 import re
+import chardet
 urllib2.socket.setdefaulttimeout(30)
+
 def getNakedDomain(url):
     '''
     return the naked domain based on url
@@ -86,43 +83,45 @@ def findtitle(websites):
         except :
             print "嘻嘻~"
             title=""
-        try:
-            charset=re.findall(r'(?<=charset=").*?(?=")',htmlfile,re.DOTALL)[0]
-        except:
-            try :
-                charset=re.findall(r'(?<=charset=).*?(?=")',htmlfile,re.DOTALL)[0]
-            except :
-                charset='utf-8'
+#        try:
+#            charset=re.findall(r'(?<=charset=").*?(?=")',htmlfile,re.DOTALL)[0].lower()
+#        except:
+#            try :
+#                charset=re.findall(r'(?<=charset=).*?(?=")',htmlfile,re.DOTALL)[0].lower()
+#            except :
+#                charset='utf-8'
         #charset=re.findall(r'(?<=charset=)["\w-\d]+?(?=")',htmlfile,re.DOTALL)[0]
         #charset=re.findall(r'(?<=charset=)["\w-\d]+"',htmlfile,re.DOTALL)[0]
         #if charset[0]=='"' or charset[0]=="'":
         #    charset = charset[1:-1]
+
+        charset=chardet.detect(htmlfile)['encoding'].lower()
         if charset=='gbk' :
-            title=title.decode('gbk').encode('utf-8')
+            title = title.decode('gbk').encode('utf-8')
         if charset=='gb2312' :
-            title=title.decode('gb2312').encode('utf-8')
+            title = title.decode('gb2312').encode('utf-8')
+        if charset=='utf-8' or charset=='utf8':
+            #title = title.encode('utf-8')
+            pass
         titles.append(title.strip())
     return titles
 
-if __name__ == "__main__":
+def starttalk():
     while 1:
         input=raw_input('>>')
-        #mysite = 'http://blog.ueseo.org'
         keyword=input
-        titles=[]
-        print "这个问题好奇怪，让陶瓷机器人我想一想~~~告诉你吧！"
-        data = baidu30(keyword.decode('utf-8'))
-        websites=ResultLinksFilter(data,'')
-        titles=findtitle(websites)
+        searchtheweb(input())
+def searchtheweb(keyword):
+    titles=[]
+    print "这个问题好奇怪，让陶瓷机器人我想一想~~~告诉你吧！"
+    data = baidu30(keyword.decode('utf-8'))
+    websites=ResultLinksFilter(data,'')
+    titles=findtitle(websites)
+    for i in range(0,3):
+        print titles[i],
+        print "---------陶瓷机器人我大发慈悲给你个链接吧 :",
+        print websites[i]
 
 
-        for i in range(0,3):
-            print titles[i],
-            print "---------陶瓷机器人我大发慈悲给你个链接吧 :",
-            print websites[i]
-
-        #print len(titles)
-        #for i in range(0,2):
-        #print titles[1].decode('gbk','ignore')+" "+websites[1]
-
-        #print data
+if __name__ == "__main__":
+    searchtheweb()
