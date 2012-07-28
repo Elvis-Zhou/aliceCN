@@ -1,6 +1,5 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+#encoding = utf-8
 #import sys
 import urllib ,urllib2
 import re
@@ -80,7 +79,7 @@ def findtitle(websites):
         try:
             htmlfile=urllib2.urlopen(web).read()
             title=re.findall(r'(?<=<title>).*?(?=</title>)',htmlfile,re.DOTALL)[0]
-        except :
+        except BaseException:
             print "嘻嘻~"
             title=""
 #        try:
@@ -94,23 +93,21 @@ def findtitle(websites):
         #charset=re.findall(r'(?<=charset=)["\w-\d]+"',htmlfile,re.DOTALL)[0]
         #if charset[0]=='"' or charset[0]=="'":
         #    charset = charset[1:-1]
-
-        charset=chardet.detect(htmlfile)['encoding'].lower()
-        if charset=='gbk' :
-            title = title.decode('gbk').encode('utf-8')
-        if charset=='gb2312' :
-            title = title.decode('gb2312').encode('utf-8')
-        if charset=='utf-8' or charset=='utf8':
-            #title = title.encode('utf-8')
+        try:
+            charset=chardet.detect(htmlfile)['encoding'].lower()
+            if charset=='gbk' :
+                title = title.decode('gbk').encode('utf-8')
+            if charset=='gb2312' :
+                title = title.decode('gb2312').encode('utf-8')
+            if charset=='utf-8' or charset=='utf8':
+                #title = title.encode('utf-8')
+                pass
+        except BaseException:
             pass
         titles.append(title.strip())
+
     return titles
 
-def starttalk():
-    while 1:
-        input=raw_input('>>')
-        keyword=input
-        searchtheweb(input)
 def searchtheweb(keyword):
     titles=[]
     print "这个问题好奇怪，让陶瓷机器人我想一想~~~告诉你吧！"
@@ -123,5 +120,34 @@ def searchtheweb(keyword):
         print websites[i]
 
 
+def starttalk():
+    while 1:
+        input=raw_input('>>')
+        input=input.replace(" ","+")
+        if input.startswith("!") or input.startswith("！"):
+            searchtheweb(input)
+        else:
+            searchsimsimi(input)
+
+def searchsimsimi(keyword):
+    titles=[]
+    url_ws='http://www.simsimi.com/func/req?lc=zh&msg='
+    #urllib2.Request()
+    request = urllib2.Request(str(url_ws)+keyword)
+    request.add_header("Referer","http://www.simsimi.com")
+    #request.add_header('Accept', 'application/json')
+    #request.get_method = lambda: 'PUT'
+    result = urllib2.urlopen(request).read()
+    #print result
+    try:
+        print eval(result)["response"]
+    except BaseException:
+        #print "陶瓷机器人我也不知道"
+        searchtheweb(keyword)
+    #for i in range(0,3):
+    #    print titles[i],
+
+
 if __name__ == "__main__":
     starttalk()
+    #searchtheweb("房山")

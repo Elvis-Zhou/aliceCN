@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bb7f1cf-1063-458c-8943-95b0b6c899ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simsimi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/aliceCN.iml" afterPath="$PROJECT_DIR$/.idea/aliceCN.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="2bb7f1cf-1063-458c-8943-95b0b6c899ca" name="Default" comment="add simsimi">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaiduforBot.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/branchdemo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaiduResult.py" afterPath="$PROJECT_DIR$/BaiduResult.py" />
     </list>
@@ -49,21 +48,28 @@
       <file leaf-file-name="BaiduResult.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BaiduResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="12" selection-start="0" selection-end="3496" vertical-scroll-proportion="0.0">
+            <state line="102" column="37" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="branchdemo.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/branchdemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="8" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.5611413">
               <folding>
-                <element signature="e#59#81#0" expanded="true" />
+                <element signature="e#54#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simsimi.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simsimi.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simsimi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="25" selection-start="727" selection-end="727" vertical-scroll-proportion="0.48126802">
-              <folding>
-                <element signature="e#83#105#0" expanded="true" />
-              </folding>
+            <state line="30" column="25" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,16 +140,17 @@
         <option value="$PROJECT_DIR$/../BaiduResult.py" />
         <option value="$PROJECT_DIR$/yanshiJinrongcihui.py" />
         <option value="$PROJECT_DIR$/ps_analysis.py" />
-        <option value="$PROJECT_DIR$/BaiduResult.py" />
         <option value="$PROJECT_DIR$/simsimi.py" />
+        <option value="$PROJECT_DIR$/BaiduResult.py" />
+        <option value="$PROJECT_DIR$/branchdemo.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1305" />
-    <option name="height" value="784" />
+    <option name="width" value="1296" />
+    <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,25 +238,7 @@
       <recent name="D:\Dropbox\code and project\python\aliceCN\aiml" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.simsimi">
-    <configuration default="false" name="TalkBot" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:/Python27/python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="aliceCN" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TalkBot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.branchdemo">
     <configuration default="false" name="yanshiJinrongcihui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,6 +313,24 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="branchdemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:/Python27/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="aliceCN" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/branchdemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="MULTIPROCESS" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,11 +392,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.TalkBot" />
-      <item index="1" class="java.lang.String" itemvalue="Python.yanshiJinrongcihui" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BaiduResult" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ps_analysis" />
-      <item index="4" class="java.lang.String" itemvalue="Python.simsimi" />
+      <item index="0" class="java.lang.String" itemvalue="Python.yanshiJinrongcihui" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BaiduResult" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ps_analysis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.simsimi" />
+      <item index="4" class="java.lang.String" itemvalue="Python.branchdemo" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -445,7 +452,11 @@
       <created>1342973500441</created>
       <updated>1342973500441</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add simsimi">
+      <created>1343061286149</created>
+      <updated>1343061286149</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -469,18 +480,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="-8" width="1305" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="958" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25364667" sideWeight="0.34170854" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28399035" sideWeight="0.63141024" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31442463" sideWeight="0.6708543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25364667" sideWeight="0.32914573" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36858973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,7 +540,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="realize web search keywords" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simsimi" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -547,6 +558,7 @@
     <MESSAGE value="try to add chinese segmentation" />
     <MESSAGE value="realize chinese segmentation ，but can't put into the next stage perfectly" />
     <MESSAGE value="realize web search keywords" />
+    <MESSAGE value="add simsimi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -555,15 +567,14 @@
           <url>file://$PROJECT_DIR$/BaiduResult.py</url>
           <line>108</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/branchdemo.py</url>
+          <line>151</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aiml/PatternMgr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="41" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../BaiduResult.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="15" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.64705884" />
@@ -589,6 +600,11 @@
         <state line="11" column="29" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://D:/Python27/Lib/urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1297" column="0" selection-start="46822" selection-end="46822" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aiml/LangSupport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="25" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" />
@@ -597,6 +613,23 @@
     <entry file="file://$PROJECT_DIR$/yanshiJinrongcihui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="924" selection-end="958" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiduResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="37" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simsimi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="25" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="8" selection-start="6472" selection-end="6472" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ps_analysis.py">
@@ -619,34 +652,11 @@
         <state line="15" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaiduResult.py">
+    <entry file="file://$PROJECT_DIR$/branchdemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="12" selection-start="0" selection-end="3496" vertical-scroll-proportion="0.0">
+        <state line="141" column="8" selection-start="4071" selection-end="4071" vertical-scroll-proportion="0.5611413">
           <folding>
-            <element signature="e#59#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/urllib2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="8" selection-start="6472" selection-end="6472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/urllib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1297" column="0" selection-start="46822" selection-end="46822" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simsimi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="727" selection-end="727" vertical-scroll-proportion="0.48126802">
-          <folding>
-            <element signature="e#83#105#0" expanded="true" />
+            <element signature="e#54#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
